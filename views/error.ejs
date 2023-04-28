@@ -1,0 +1,45 @@
+<%-include('./layout/header')-%>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff5900;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand text-info" href="#">Oops</a>
+  
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/login.">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/signup.">Sign_Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+
+  <div class="d-flex justify-content-center align-items-center flex-column mt-5">
+    <div>
+        <form class="form" action="/login.">
+           
+           
+              <h1 class="h1 text-white fw-bold">404</h1>
+              <p class="h5 text-white"> <span class="text-danger">Opps!</span> Page not found.</p>
+              <p class="h5 text-white">
+                  The page you’re looking for doesn’t exist.
+                </p>
+                <button type="submit" class="button">Go Home</button>
+            
+            
+        </form>
+    </div>
+  </div>
+  
+<%-include('./layout/footer')-%>

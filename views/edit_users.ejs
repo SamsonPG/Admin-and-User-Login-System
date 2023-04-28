@@ -1,0 +1,15 @@
+<%-include('./layout/header')-%>
+<div class="d-flex justify-content-center align-items-center flex-column mt-5">
+    <div>
+        <form class="form " id="signupForm" action="/update/<%= user._id %>" method="post">
+            <p class="h5 text-white">Edit User : <%= user.name %></p>
+            
+          
+            <input class="input" type="text" id="name" name="name" autocomplete="off" value="<%= user.name %>" placeholder="Name">
+            <input type="email" id="email" name="email" class="input" autocomplete="off" value="<%= user.email %>" placeholder="E-Mail I.D.">
+            <input type="" id="password" name="password" class="input" autocomplete="off" value="<%= user.password %>" placeholder="Password">
+            <button type="submit" class="button">Edit User</button>
+        </form>
+    </div>
+  </div>
+  <%-include('./layout/footer')-%>

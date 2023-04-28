@@ -1,0 +1,84 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("table").DataTable({
+                order: [0, 'desc']
+            });
+        });
+    </script>
+<script>
+  setTimeout(function() {
+    document.querySelector('#msgs').remove();
+  }, 2000); // remove the message after 5 seconds (5000 milliseconds)
+</script>
+
+<script>
+
+function validateSignUpForm() {
+  var name = document.getElementById("name").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var password = document.getElementById("password").value.trim();
+  
+  // Validation for name field
+  if (name == "") {
+    alert("Name must be filled out");
+  
+    return false;
+  }
+
+  // Validate name
+  var nameRegex = /^[A-Za-z\s]+$/;
+  if (!nameRegex.test(name)) {
+    alert("Name should only contain letters and spaces.");
+   
+    return false;
+  }
+
+  // Validation for email field
+  if (email == "") {
+    alert("Email must be filled");
+   
+    return false;
+  } else {
+    // regex for email validation
+    var email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (!email_regex.test(email)) {
+      alert("Invalid email address");
+     
+      return false;
+    }
+  }
+
+  // Validation for password field
+  if (password == "") {
+    alert("Password must be filled out");
+   
+    return false;
+  } else if (password.length < 8) {
+    alert("Password must be at least 8 characters long");
+   
+    return false;
+  }
+
+  // form is valid, no error message
+  return true;
+}
+
+</script>
+
+<script>    
+  window.history.pushState(null, null, window.location.href);
+  window.onpopstate = function () {
+      window.history.go(1);
+      };</script>
+      <footer>
+        <nav class="navbar fixed-bottom navbar-dark navbar-transparent justify-content-center">
+          <p class="h6">Created By Samson P G</p>
+        </nav>
+        
+      </footer>
+</body>
+</html>

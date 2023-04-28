@@ -1,0 +1,15 @@
+
+<%-include('./layout/header')-%>
+<div class="d-flex justify-content-center align-items-center flex-column mt-5">
+    <div>
+        <form class="form " id="signupForm" action="/add" method="post">
+            <p class="h5 text-white">Add User</p>
+            <input class="input" type="text" id="name" name="name" autocomplete="off" placeholder="Name" required>
+            <input type="email" id="email" name="email" class="input" autocomplete="off" placeholder="E-Mail I.D." required>
+            <input type="" id="password" name="password" class="input" autocomplete="off" placeholder="Password" required>
+            <button type="submit" class="button">Add User</button>
+        </form>
+    </div>
+  </div>
+
+  <%-include('./layout/footer')-%>
