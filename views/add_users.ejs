@@ -2,7 +2,7 @@
 <%-include('./layout/header')-%>
 <div class="d-flex justify-content-center align-items-center flex-column mt-5">
     <div>
-        <form class="form " id="signupForm" action="/add" method="post">
+        <form class="form " id="signupForm" action="/add" method="post" onsubmit="return validateSignUpForm()">
             <p class="h5 text-white">Add User</p>
             <input class="input" type="text" id="name" name="name" autocomplete="off" placeholder="Name" required>
             <input type="email" id="email" name="email" class="input" autocomplete="off" placeholder="E-Mail I.D." required>
